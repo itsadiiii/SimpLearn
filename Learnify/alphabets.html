@@ -1,0 +1,164 @@
+<!doctype HTML>
+<html>
+<head>
+  <title>Alphabets</title>
+  <meta charset="utf-8">
+</head>
+<script src="./Assets/Scripts/scene.js"></script>
+<script src="./Assets/Scripts/augmented.js"></script>
+  <body style='margin : 0px; overflow: hidden;'>
+
+    <a-scene embedded arjs='sourceType: webcam;'>
+
+    <!--a-marker preset="hiro">
+            <a-box position='0 0.5 0' material='color: black;'></a-box>
+    </a-marker-->
+    <a-marker preset='custom' type='pattern' url='./Assets/Markers/pattern-marker.patt'>
+        <a-entity 
+            obj-model="obj: url(./Assets/Models/english/car.obj); 
+            mtl: url(./Assets/Texture/car.mtl)">
+        </a-entity>
+
+    </a-marker>
+
+    <a-assets>
+    <a-asset-item id="apple" src="./Assets/Models/english/apple.glb">
+    <a-asset-item id="ball" src="./Assets/Models/english/ball.glb">
+    <a-asset-item id="car" src="./Assets/Models/english/car.glb">
+    <a-asset-item id="dog" src="./Assets/Models/english/dog.glb">
+    <a-asset-item id="elephant" src="./Assets/Models/english/elephant.glb">
+    <a-asset-item id="frog" src="./Assets/Models/english/frog.glb">
+    <a-asset-item id="giraffe" src="./Assets/Models/english/giraffe.glb">
+    <a-asset-item id="horse" src="./Assets/Models/english/horse.glb">
+    <a-asset-item id="icecream" src="./Assets/Models/english/icecream.glb">
+    <a-asset-item id="joker" src="./Assets/Models/english/joker.glb">
+    <a-asset-item id="knife" src="./Assets/Models/english/knife.glb">
+    <a-asset-item id="lumberjack" src="./Assets/Models/english/lumberjack.glb">
+    <a-asset-item id="moon" src="./Assets/Models/english/moon.glb">
+    <a-asset-item id="nose" src="./Assets/Models/english/nose.glb">
+    <a-asset-item id="octopus" src="./Assets/Models/english/octopus.glb">
+    <a-asset-item id="pumpkin" src="./Assets/Models/english/pumpkin.glb">
+    <a-asset-item id="queen" src="./Assets/Models/english/queen.glb">
+    <a-asset-item id="rat" src="./Assets/Models/english/rat.glb">
+    <a-asset-item id="snake" src="./Assets/Models/english/snake.glb">
+    <a-asset-item id="tail" src="./Assets/Models/english/tail.glb">
+    <a-asset-item id="universe" src="./Assets/Models/english/universe.glb">
+    <a-asset-item id="vowel" src="./Assets/Models/english/vowel.glb">
+    <a-asset-item id="whale" src="./Assets/Models/english/whale.glb">
+    <a-asset-item id="xanax" src="./Assets/Models/english/xanax.glb">
+    <a-asset-item id="yogurt" src="./Assets/Models/english/yogurt.glb">
+    <a-asset-item id="zebra" src="./Assets/Models/english/zebra.glb">
+  </a-assets>
+
+
+  <!-- Using the asset management system. -->
+  <!--a-gltf-model src="#apple"></a-gltf-model-->
+
+    <a-marker preset='custom' type='pattern' url='./Assets/Markers/a.patt'>
+        <a-gltf-model src="#apple"></a-gltf-model>
+    </a-marker>
+
+    <a-marker preset='custom' type='pattern' url='./Assets/Markers/b.patt'>
+      <a-gltf-model src="#ball"></a-gltf-model>
+    </a-marker>
+
+    <a-marker preset='custom' type='pattern' url='./Assets/Markers/c.patt'>
+      <a-gltf-model src="#car"></a-gltf-model>
+    </a-marker>
+
+    <a-marker preset='custom' type='pattern' url='./Assets/Markers/d.patt'>
+      <a-gltf-model src="#dog"></a-gltf-model>
+    </a-marker>
+
+    <a-marker preset='custom' type='pattern' url='./Assets/Markers/e.patt'>
+      <a-gltf-model src="#elephant"></a-gltf-model>
+    </a-marker>
+
+    <a-marker preset='custom' type='pattern' url='./Assets/Markers/f.patt'>
+      <a-gltf-model src="#frog"></a-gltf-model>
+    </a-marker>
+
+    <a-marker preset='custom' type='pattern' url='./Assets/Markers/g.patt'>
+      <a-gltf-model src="#giraffe"></a-gltf-model>
+    </a-marker>
+
+    <a-marker preset='custom' type='pattern' url='./Assets/Markers/h.patt'>
+      <a-gltf-model src="#horse"></a-gltf-model>
+    </a-marker>
+
+    <a-marker preset='custom' type='pattern' url='./Assets/Markers/i.patt'>
+      <a-gltf-model src="#icecream"></a-gltf-model>
+    </a-marker>
+
+    <a-marker preset='custom' type='pattern' url='./Assets/Markers/j.patt'>
+      <a-gltf-model src="#joker"></a-gltf-model>
+    </a-marker>
+
+    <a-marker preset='custom' type='pattern' url='./Assets/Markers/k.patt'>
+      <a-gltf-model src="#knife"></a-gltf-model>
+    </a-marker>
+
+    <a-marker preset='custom' type='pattern' url='./Assets/Markers/l.patt'>
+      <a-gltf-model src="#lumberjack"></a-gltf-model>
+    </a-marker>
+
+    <a-marker preset='custom' type='pattern' url='./Assets/Markers/m.patt'>
+      <a-gltf-model src="#moon"></a-gltf-model>
+    </a-marker>
+
+    <a-marker preset='custom' type='pattern' url='./Assets/Markers/n.patt'>
+      <a-gltf-model src="#nose"></a-gltf-model>
+    </a-marker>
+
+    <a-marker preset='custom' type='pattern' url='./Assets/Markers/o.patt'>
+      <a-gltf-model src="#octopus"></a-gltf-model>
+    </a-marker>
+
+    <a-marker preset='custom' type='pattern' url='./Assets/Markers/p.patt'>
+      <a-gltf-model src="#pumpkin"></a-gltf-model>
+    </a-marker>
+
+    <a-marker preset='custom' type='pattern' url='./Assets/Markers/q.patt'>
+      <a-gltf-model src="#queen"></a-gltf-model>
+    </a-marker>
+
+    <a-marker preset='custom' type='pattern' url='./Assets/Markers/r.patt'>
+      <a-gltf-model src="#rat"></a-gltf-model>
+    </a-marker>
+
+    <a-marker preset='custom' type='pattern' url='./Assets/Markers/s.patt'>
+      <a-gltf-model src="#snake"></a-gltf-model>
+    </a-marker>
+
+    <a-marker preset='custom' type='pattern' url='./Assets/Markers/t.patt'>
+      <a-gltf-model src="#tail"></a-gltf-model>
+    </a-marker>
+
+    <a-marker preset='custom' type='pattern' url='./Assets/Markers/u.patt'>
+      <a-gltf-model src="#universe"></a-gltf-model>
+    </a-marker>
+
+    <a-marker preset='custom' type='pattern' url='./Assets/Markers/v.patt'>
+      <a-gltf-model src="#vowels"></a-gltf-model>
+    </a-marker>
+
+    <a-marker preset='custom' type='pattern' url='./Assets/Markers/w.patt'>
+      <a-gltf-model src="#whale"></a-gltf-model>
+    </a-marker>
+
+    <a-marker preset='custom' type='pattern' url='./Assets/Markers/x.patt'>
+      <a-gltf-model src="#xanax"></a-gltf-model>
+    </a-marker>
+
+    <a-marker preset='custom' type='pattern' url='./Assets/Markers/y.patt'>
+      <a-gltf-model src="#yogurt"></a-gltf-model>
+    </a-marker>
+
+    <a-marker preset='custom' type='pattern' url='./Assets/Markers/z.patt'>
+      <a-gltf-model src="#zebra"></a-gltf-model>
+    </a-marker>
+
+    <a-entity camera></a-entity>
+    </a-scene>
+  </body>
+</html>
